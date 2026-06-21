@@ -9,5 +9,6 @@
 7. K-Nearest Neighbors (KNN) using Glass Dataset
 8. K-Means Clustering using Iris Dataset
 9. Agglomerative Hierarchical Clustering
-10. Principal Component Analysis (PCA) and Linear Discriminant Analysis (LDA)
-11. Single Layer Perceptron for AND and OR Gates
+10. Principal Component Analysis (PCA)
+11. Linear Discriminant Analysis (LDA)
+12. Single Layer Perceptron for AND and OR Gates
