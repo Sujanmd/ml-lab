@@ -1,28 +1,21 @@
 import matplotlib.pyplot as plt
-
 from sklearn.datasets import load_iris
 from scipy.cluster.hierarchy import dendrogram, linkage
 
-# Load Iris Dataset
-X = load_iris().data
+# Load first 6 samples
+X = load_iris().data[:6]
 
-# Single Linkage
-single = linkage(X, method='single')
-
+# Single Linkage Dendrogram
 plt.figure()
-dendrogram(single)
-
+dendrogram(linkage(X, method='single'))
 plt.title("Single Linkage Dendrogram")
 plt.xlabel("Samples")
 plt.ylabel("Distance")
 plt.show()
 
-# Complete Linkage
-complete = linkage(X, method='complete')
-
+# Complete Linkage Dendrogram
 plt.figure()
-dendrogram(complete)
-
+dendrogram(linkage(X, method='complete'))
 plt.title("Complete Linkage Dendrogram")
 plt.xlabel("Samples")
 plt.ylabel("Distance")
